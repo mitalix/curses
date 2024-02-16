@@ -2,7 +2,7 @@
 Python curses - simple 3 panel display
 
 <h3>Under development</h3>
-<p>The objective is write the program an simultaneously utilize gitub for source control</p>
+<p>The objective is write the program and simultaneously utilize gitub for source control</p>
 
 <h3>Navigate between three seperate windows</h3>
 <p>TAB - move horizontally</p>
