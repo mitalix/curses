@@ -4,7 +4,7 @@ curses
 Python curses - simple 3 panel display
 
 > [!WARNING]
-> Under development
+> Under development, unstructured, not even using functions, repeating a lot of useless code
 
 Twofold solution to write the program and simultaneously utilize gitub for source control
 
