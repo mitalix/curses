@@ -47,7 +47,7 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 |:--------------------------------------------------------------------:|
 
 <p align="center">
-<b>Flinstones, meet the Flintstones, a modern stone age family</b>
+<b>|Flinstones, meet the Flintstones, a modern stone age family|</b>
 </p>
 <br>
 
