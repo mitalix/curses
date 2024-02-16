@@ -22,7 +22,7 @@ The background color is `#ffffff` for light mode and `#000000` for dark mode.
                      `rgb(9, 105, 218)`Flinstones, meet the Flintstones, a modern stone age family.
 
       ┌───────────────────────┐      ┌───────────────────────┐      ┌───────────────────────┐
-      │        box1`#000000`         │      │         box2          │      │         box3          │
+      │         box1          │      │         box2          │      │         box3          │
       ├───────────────────────┤      ├───────────────────────┤      ├───────────────────────┤
       │ Element-0             │      │ Element-0             │      │ Element-0             │
       │ Element-1             │      │ Element-1             │      │ Element-1             │
