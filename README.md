@@ -19,7 +19,7 @@ Python curses - simple 3 panel display
 
 
 <p align="center">
-Flinstones, meet the Flintstones, a modern stone age family
+<b>Flinstones, meet the Flintstones, a modern stone age family</b>
 </p>
 <br>
 
