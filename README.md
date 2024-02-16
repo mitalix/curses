@@ -2,24 +2,22 @@
 Python curses - simple 3 panel display
 
 
-Under development
-The objective is write the program an simultaneously utilize gitub for source control
+<h3>Under development</h3>
+<p>The objective is write the program an simultaneously utilize gitub for source control</p>
 
+<h3>Navigate between three seperate windows</h3>
+<p>TAB - move horizontally</p>
+<p>ENTER - select a command</p>
+<p>UP/DOWN - navigate elements in panel</p>
 
-Navigate between three seperate windows
-
-TAB - move horizontally
-ENTER - select a command
-UP/DOWN - navigate elements in panel
-
-Objective: 
-  box1 - Select (future) commands
-  box2 - Manage and poll dnsmasq service
-  box3 - Launch scrolling >journalctl -fex
+<h3>Objective:</h3>
+<p>box1 - Select (future) commands</p>
+<p>box2 - Manage and poll dnsmasq service</p>
+<p>box3 - Launch scrolling >journalctl -fex</p>
   
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
+(The background color isn't showing up correctly for box headings)
 
-                     `rgb(9, 105, 218)`Flinstones, meet the Flintstones, a modern stone age family.
+                     Flinstones, meet the Flintstones, a modern stone age family.
 
       ┌───────────────────────┐      ┌───────────────────────┐      ┌───────────────────────┐
       │         box1          │      │         box2          │      │         box3          │
