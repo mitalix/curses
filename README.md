@@ -32,7 +32,7 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 </p>
 
       ┌───────────────────────┐      ┌───────────────────────┐      ┌───────────────────────┐
-      │         box1          │      │         box2          │      │         box3          │
+      │         <font bgColor="#6B6B6B">box1</font>          │      │         box2          │      │         box3          │
       ├───────────────────────┤      ├───────────────────────┤      ├───────────────────────┤
       │ Element-0             │      │ Element-0             │      │ Element-0             │
       │ Element-1             │      │ Element-1             │      │ Element-1             │

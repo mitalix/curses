@@ -11,7 +11,8 @@ def shoe_horn(stdscr):
     this_y, this_x   = stdscr.getmaxyx()
     three_boxes      = ["box1", "box2", "box3"]
     focus            = ["box1", "box2", "box3"]
-    box1_list        = [f'Element-{a}' for a in range(20)]
+    box1_list        = [f'Element-{a}' for a in range(10)]
+    # box1_list        = [f'Element-{a}' for a in range(20)]
     box2_list        = [f'Element-{a}' for a in range(20)]
     box3_list        = [f'Element-{a}' for a in range(20)]
 
@@ -31,9 +32,9 @@ def shoe_horn(stdscr):
     box1_pointer     = 0
     box2_pointer     = 0
     box3_pointer     = 0
-    box1_index     = 0
-    box2_index     = 0
-    box3_index     = 0
+    box1_index       = 0
+    box2_index       = 0
+    box3_index       = 0
     
     ## ## ############################################
     ## ## ############################################
@@ -82,13 +83,14 @@ def shoe_horn(stdscr):
     ## ## ############################################
     ## ## Initialize the selected menu items
     ## ## ############################################
-        box1.addstr(box1_pointer + heading_offset - 1,2,"DINO the Dinosaur", curses.A_REVERSE | curses.A_DIM)
+        box1_buffer = box1_list[box1_index:height-heading_offset]
+        box1.addstr(box1_pointer + heading_offset - 1,2,f"{box1_buffer[box1_index]}", curses.A_REVERSE | curses.A_DIM)
+        # box1.addstr(box1_pointer + heading_offset - 1,2,"DINO the Dinosaur", curses.A_REVERSE | curses.A_DIM)
         box2.addstr(box2_pointer + heading_offset - 1,2,"DINO the Dinosaur", curses.A_REVERSE | curses.A_DIM)
         box3.addstr(box3_pointer + heading_offset - 1,2,"DINO the Dinosaur", curses.A_REVERSE | curses.A_DIM)
     ## ## ############################################
     ## ## List elements in pane
     ## ## ############################################
-        box1_buffer = box1_list[box1_index:height-heading_offset]
         for line, element in enumerate(box1_buffer):
             box1.addstr(line + 3,2, element[:10])
         box2_buffer = box2_list[box2_index:height-heading_offset]
