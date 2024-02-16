@@ -22,7 +22,6 @@ Python curses - simple 3 panel display
 Flinstones, meet the Flintstones, a modern stone age family
 </p>
 <br>
-<br>
 
       ┌───────────────────────┐      ┌───────────────────────┐      ┌───────────────────────┐
       │         box1          │      │         box2          │      │         box3          │
