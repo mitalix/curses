@@ -1,35 +1,52 @@
-# curses
-Python curses - simple 3 panel display
+curses
+=
+> Python curses - simple 3 panel display
 
-<h1>TEST</h1>
+> [!CAUTION]
+> Possible negative outcomes resulting from an action.
 
 
-<h3>Under development</h3>
-<p>The objective is write the program and simultaneously utilize gitub for source control</p>
+> [!CAUTION]
+> Under development
 
-<h3>Navigate between three seperate windows</h3>
-<p>TAB - move horizontally</p>
-<p>ENTER - select a command</p>
-<p>UP/DOWN - navigate elements in panel</p>
+Under development
+-
 
-<h3>Objective:</h3>
-<p>box1 - Select (future) commands</p>
-<ul>
-  <li>To launch or manage dnsmasq</li>
-  <li>Launch PXE environment, i.e., dhcp, tftp and nfs</li>
-  <li>Launch a QEMU image to PXE boot</li>
-  <li>Prepare environment for metal server to PXE boot</li>
-</ul>
-<p>box2 - Monitor and poll dnsmasq service</p>
-<p>box3 - Launch continuous scrolling "journalctl -fex" using subprocess</p>
-<ul>
-  <li>Capability to scroll up into history</li>
-  <li>Hot key to scroll to bottom</li>
-</ul>
-(The background color isn't showing up correctly for box headings)
-<br>
-<br>
+> Twofold solution to write the program and simultaneously utilize gitub for source control
 
+### Navigate between three seperate windows
+* **TAB** - move horizontally
+* **ENTER** - select a command
+* **UP/DOWN**- navigate elements in panel
+
+### Objective
+#### box1 - Select (future) commands
+* To launch or manage dnsmasq
+* Launch PXE environment, i.e., dhcp, tftp and nfs
+* Launch a QEMU image to PXE boot
+* Prepare environment for metal server to PXE boot
+
+#### box2 - Monitor and poll dnsmasq service
+#### box3 - Launch continuous scrolling "journalctl -fex" using subprocess
+* Capability to scroll up into history
+* Hot key to scroll to bottom
+
+##### (The background color isn't showing up correctly for box headings)
+
+|Are|
+|:-:|
+|centered|
+
+
+|centered|
+|:-:|
+
+
+|centered|
+
+
+|Flinstones, meet the Flintstones, a modern stone age family|
+|:-:|
 
 <p align="center">
 <b>Flinstones, meet the Flintstones, a modern stone age family</b>
