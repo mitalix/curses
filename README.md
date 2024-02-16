@@ -1,6 +1,8 @@
 # curses
 Python curses - simple 3 panel display
 
+BAZINGO
+BAJANGO
 
 <h3>Under development</h3>
 <p>The objective is write the program an simultaneously utilize gitub for source control</p>

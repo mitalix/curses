@@ -165,9 +165,7 @@ def shoe_horn(stdscr):
             case "\n" | " ":
                 stdscr.addstr(k)
                 Enter = True
-
     ## ## ############################################
-
 
 curses.wrapper(shoe_horn)
 
