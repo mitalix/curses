@@ -1,11 +1,13 @@
-> [!CAUTION]
+
 curses
 =
-> Python curses - simple 3 panel display
+Python curses - simple 3 panel display
 
+> [!CAUTION]
 > Under development
 
-> Twofold solution to write the program and simultaneously utilize gitub for source control
+
+Twofold solution to write the program and simultaneously utilize gitub for source control
 
 ### Navigate between three seperate windows
 * **TAB** - move horizontally
