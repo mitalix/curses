@@ -11,8 +11,18 @@ Python curses - simple 3 panel display
 
 <h3>Objective:</h3>
 <p>box1 - Select (future) commands</p>
-<p>box2 - Manage and poll dnsmasq service</p>
+<ul>
+  <li>To launch or manage dnsmasq</li>
+  <li>Launch PXE environment, i.e., dhcp, tftp and nfs</li>
+  <li>Launch a QEMU image to PXE boot</li>
+  <li>Prepare environment for metal server to PXE boot</li>
+</ul>
+<p>box2 - Monitor and poll dnsmasq service</p>
 <p>box3 - Launch continuous scrolling "journalctl -fex" using subprocess</p>
+<ul>
+  <li>Capability to scroll up into history</li>
+  <li>Hot key to scroll to bottom</li>
+</ul>
 (The background color isn't showing up correctly for box headings)
 <br>
 <br>
