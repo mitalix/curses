@@ -99,6 +99,8 @@ def shoe_horn(stdscr):
 
     ## ## ############################################
         if focus[0] == "box1":
+            # box1.addstr(1,2, focus[0])
+            box1.addstr(1,1,f'{focus[0]:^{this_x - 2}}', curses.A_REVERSE)
             box1.addstr(box1_pointer + heading_offset - 1,2,f"{box1_buffer[box1_pointer]}", curses.A_NORMAL)
             if height - heading_offset > len(box1_buffer[box1_index:]):
                 stretch = len(box1_buffer[box1_index]) + 1
@@ -109,6 +111,7 @@ def shoe_horn(stdscr):
             # box1.addstr(box1_pointer + heading_offset - 1,2,"BINGO", curses.A_REVERSE | curses.A_ITALIC | curses.A_UNDERLINE | curses.A_BOLD)
     ## ## ############################################
         elif focus[0] == "box2":
+            box2.addstr(1,1,f'{focus[0]:^{this_x - 2}}', curses.A_REVERSE)
             box2.addstr(box2_pointer + heading_offset - 1,2,f"{box2_buffer[box2_pointer]}", curses.A_NORMAL)
             if height - heading_offset > len(box2_buffer[box2_index:]):
                 stretch = len(box2_buffer[box2_index]) + 1
@@ -119,6 +122,7 @@ def shoe_horn(stdscr):
             # box1.addstr(box1_pointer + heading_offset - 1,2,"BINGO", curses.A_REVERSE | curses.A_ITALIC | curses.A_UNDERLINE | curses.A_BOLD)
     ## ## ############################################
         elif focus[0] == "box3":
+            box3.addstr(1,1,f'{focus[0]:^{this_x - 2}}', curses.A_REVERSE)
             box3.addstr(box3_pointer + heading_offset - 1,2,f"{box3_buffer[box3_pointer]}", curses.A_NORMAL)
             if height - heading_offset > len(box1_buffer[box3_index:]):
                 stretch = len(box3_buffer[box3_index]) + 1
