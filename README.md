@@ -30,7 +30,12 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 
 
 |Flinstones, meet the Flintstones, a modern stone age family|
-|:--------------------------------------------------------------------:|
+|:-:|
+
+
+
+<center><b>Flinstones, meet the Flintstones, a modern stone age family</b></center>
+
 
 <p align="center">
 <b>Flinstones, meet the Flintstones, a modern stone age family</b>
