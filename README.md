@@ -49,5 +49,4 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
      └───────────────────┘     └───────────────────┘     └───────────────────┘
 
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-<!-- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) -->
+![alt text](https://github.com/mitalix/curses/blob/main/Screenshot_2024-02-17_00-45-06.png?raw=true)
