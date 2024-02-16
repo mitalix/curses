@@ -27,6 +27,7 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 
 ##### (The background color isn't showing up correctly for box headings)
 
+
 <p align="center">
 <b>Flinstones, meet the Flintstones, a modern stone age family</b>
 </p>
