@@ -3,13 +3,7 @@ curses
 > Python curses - simple 3 panel display
 
 > [!CAUTION]
-> Possible negative outcomes resulting from an action.
-
-
-> [!CAUTION]
 > Under development
-
-Under development
 -
 
 > Twofold solution to write the program and simultaneously utilize gitub for source control
