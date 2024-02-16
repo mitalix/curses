@@ -3,7 +3,7 @@ curses
 =
 Python curses - simple 3 panel display
 
-> [!CAUTION]
+> [!WARNING]
 > Under development
 
 Twofold solution to write the program and simultaneously utilize gitub for source control
