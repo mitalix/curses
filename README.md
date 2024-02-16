@@ -13,10 +13,13 @@ Python curses - simple 3 panel display
 <p>box1 - Select (future) commands</p>
 <p>box2 - Manage and poll dnsmasq service</p>
 <p>box3 - Launch scrolling >journalctl -fex</p>
-  
 (The background color isn't showing up correctly for box headings)
+<br>
+<br>
+<center>Flinstones, meet the Flintstones, a modern stone age family</center>
 
-                     Flinstones, meet the Flintstones, a modern stone age family.
+<br>
+<br>
 
       ┌───────────────────────┐      ┌───────────────────────┐      ┌───────────────────────┐
       │         box1          │      │         box2          │      │         box3          │
@@ -37,6 +40,4 @@ Python curses - simple 3 panel display
       │ Element-13            │      │ Element-13            │      │ Element-13            │
       │ Element-14            │      │ Element-14            │      │ Element-14            │
       └───────────────────────┘      └───────────────────────┘      └───────────────────────┘
-
-
 
