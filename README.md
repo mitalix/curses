@@ -16,8 +16,11 @@ Python curses - simple 3 panel display
 (The background color isn't showing up correctly for box headings)
 <br>
 <br>
-<center>Flinstones, meet the Flintstones, a modern stone age family</center>
 
+
+<p align="center">
+Flinstones, meet the Flintstones, a modern stone age family
+</p>
 <br>
 <br>
 
