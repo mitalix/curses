@@ -4,7 +4,6 @@
 import curses
 
 
-
 def shoe_horn(stdscr):
     stdscr.refresh()
     text             = 'Flinstones, meet the Flintstones, a modern stone age family.'
