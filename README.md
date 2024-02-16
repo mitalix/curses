@@ -32,16 +32,19 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 |:-:|
 |centered|
 
+|Are|
+|:-:|
+|centered|
+
 
 |centered|
 |:-:|
 
 
-|centered|
 
 
 |Flinstones, meet the Flintstones, a modern stone age family|
-|:-:|
+|:--------------------------------------------------------------------:|
 
 <p align="center">
 <b>Flinstones, meet the Flintstones, a modern stone age family</b>
