@@ -12,7 +12,7 @@ Python curses - simple 3 panel display
 <h3>Objective:</h3>
 <p>box1 - Select (future) commands</p>
 <p>box2 - Manage and poll dnsmasq service</p>
-<p>box3 - Launch scrolling >journalctl -fex</p>
+<p>box3 - Launch continuous scrolling "journalctl -fex" using subprocess</p>
 (The background color isn't showing up correctly for box headings)
 <br>
 <br>
