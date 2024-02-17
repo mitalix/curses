@@ -25,28 +25,5 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 * Capability to scroll up into history
 * Hot key to scroll to bottom
 
-##### (The background color isn't showing up correctly for box headings)
-
-
-<p align="center">
-<b>Flinstones, meet the Flintstones, a modern stone age family</b>
-</p>
-
-     ┌───────────────────┐     ┌───────────────────┐     ┌───────────────────┐
-     │       box1        │     │       box2        │     │       box3        │
-     ├───────────────────┤     ├───────────────────┤     ├───────────────────┤
-     │ Element-0         │     │ Element-0         │     │ Element-0         │
-     │ Element-1         │     │ Element-1         │     │ Element-1         │
-     │ Element-2         │     │ Element-2         │     │ Element-2         │
-     │ Element-3         │     │ Element-3         │     │ Element-3         │
-     │ Element-4         │     │ Element-4         │     │ Element-4         │
-     │ Element-5         │     │ Element-5         │     │ Element-5         │
-     │ Element-6         │     │ Element-6         │     │ Element-6         │
-     │ Element-7         │     │ Element-7         │     │ Element-7         │
-     │ Element-8         │     │ Element-8         │     │ Element-8         │
-     │ Element-9         │     │ Element-9         │     │ Element-9         │
-     │ Element-10        │     │ Element-10        │     │ Element-10        │
-     └───────────────────┘     └───────────────────┘     └───────────────────┘
-
 
 ![alt text](https://github.com/mitalix/curses/blob/main/Screenshot_2024-02-17_00-45-06.png?raw=true)
