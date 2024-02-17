@@ -49,7 +49,7 @@ for a in list_of_boxes:
                 nlines,
                 ncols,
                 begin_y,
-                (a +3) + (a * begin_x))
+                (a + 3) + (a * begin_x))
         } ) 
 
 ## ## ################################### ## ## ##
