@@ -20,8 +20,9 @@ def shoe_horn(stdscr):
     width            = this_x    // 4
     y                = this_y   // 8
     x_box1           = (this_x - (3 * width)) // (len(three_boxes) + 1)
-    x_box2           = x_box1 + width + x_box1
-    x_box3           = x_box2 + width + x_box1
+    x_box2           = 2 * x_box1 + width
+    x_box3           = 3 * x_box1 + 2 * width
+    # x_box3           = x_box2 + width + x_box1
     box1             = curses.newwin(height, width, y, x_box1)
     box2             = curses.newwin(height, width, y, x_box2)
     box3             = curses.newwin(height, width, y, x_box3)
