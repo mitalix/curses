@@ -96,11 +96,8 @@ def shoe_horn(stdscr):
         box1.addstr(box1_pointer + heading_offset - 1,2,f"{box1_buffer[box1_index + box1_pointer]}", curses.A_REVERSE | curses.A_DIM)
         box2.addstr(box2_pointer + heading_offset - 1,2,f"{box1_buffer[box2_index + box2_pointer]}", curses.A_REVERSE | curses.A_DIM)
         box3.addstr(box3_pointer + heading_offset - 1,2,f"{box1_buffer[box3_index + box3_pointer]}", curses.A_REVERSE | curses.A_DIM)
-        # box1.addstr(box1_pointer + heading_offset - 1,2,"DINO the Dinosaur", curses.A_REVERSE | curses.A_DIM)
-
     ## ## ############################################
         if focus[0] == "box1":
-            # box1.addstr(1,2, focus[0])
             box1.addstr(1,1,f'{focus[0]:^{this_x - 2}}', curses.A_REVERSE)
             box1.addstr(box1_pointer + heading_offset - 1,2,f"{box1_buffer[box1_pointer]}", curses.A_NORMAL)
             if height - heading_offset > len(box1_buffer[box1_index:]):
