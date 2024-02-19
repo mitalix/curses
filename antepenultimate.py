@@ -37,28 +37,16 @@ class Window:
         self.height = h - border_and_stuff
         self.width  = w - border
         # self.height = 5
-    def playtime(self):
-        h,w = self.box.getmaxyx()
-        self.height = h - stuff - 1
-        self.width  = w - border
     def bark(self):
         bow_wow = "bark bark! "
-        print(bow_wow)
-        # self.box.addstr(5,5,bow_wow)
         stdscr.addstr(bow_wow)
     def doginfo(self):
         stdscr.addstr(f"element_pointer is {str(self.element_pointer)} :: ")
 ##################################################
 ## ## ## This is where we incantate the boxes, the entities, the things
 ##################################################
-# n is the number, the number we have chosen randomly, out of the hat, out of the blue, on a blue moon.
-#this_range=10
-#stdscr.addstr(f'{n}')
 # number_of_boxes = n
-## ## ################################### ## ## ##
-## ## ################################### ## ## ##
-
-n = 3
+n = 5
 pane = { 'height': curses.LINES * n  // (n + 1) - border_and_stuff , 'width' : curses.COLS  // (n + 1) - border_and_stuff  }
 nlines       = curses.LINES    * n  // (n + 1)
 ncols        = curses.COLS         // (n + 1)
@@ -72,17 +60,14 @@ dictionary_of_content  = {} ## ## ########### ## ## ##
 box                    = []
 win                    = []
 focus                  = []
-
 pointer_indicator      = 0
 ## ## ################################### ## ## ##
 ## ## Create n windows
 ## ## ################################### ## ## ##
-
 for a in range(n):
     win.append(Window(f'box{a}', curses.newwin( nlines, ncols, begin_y + 1, increment + 1), 0, 0))
     increment += space + ncols
     focus.append(win[a].name)
-
 ## ## ################################### ## ## ##
 ## ## Now we are ready to enter the meat grinder
 ## ## ################################### ## ## ##
@@ -90,9 +75,7 @@ while continue_machine:
     ## ## ################################### ## ## ##
     ## ## Print out those boxes to the screen
     ## ## ################################### ## ## ##
-
-    # win[a].box.addstr(win[a].element_pointer + 3,2,f'{win[a].content[0]:^{pane["width"]}}', curses.A_NORMAL)
-    if pointer_indicator != 0:
+    if pointer_indicator:
         win[box_index].element_pointer = (win[box_index].element_pointer + pointer_indicator) % win[box_index].height
         pointer_indicator = 0
     for a in range(n):
@@ -105,33 +88,16 @@ while continue_machine:
         ## Highlight the column pointer when not selected as DIM
         this_y = win[a].element_pointer
         win[a].box.addstr(win[a].element_pointer + 3,2,f'{win[a].content[this_y]:^{pane["width"]}}', curses.A_REVERSE | curses.A_DIM)
-        # win[a].box.addstr(win[a].element_pointer + 3,2,f'{win[a].content[0]:^{pane["width"]}}', curses.A_REVERSE | curses.A_DIM)
-    ## Highlight the focus, i.e., focus[0], the heading or title
+        ## Highlight the focus, i.e., focus[0], the heading or title
     box_index = int(focus[0][3:])
     win[box_index].box.addstr(1,2,f'{win[box_index].name:^{pane["width"]}}', curses.A_REVERSE)
-    ## Highlight the focus, i.e., focus[0], the heading or title
+        ## Highlight the focus, i.e., focus[0], the heading or title
     win[box_index].box.addstr(win[box_index].element_pointer + 3,2,f'{win[box_index].content[win[box_index].element_pointer]:^{pane["width"]}}', curses.A_REVERSE | curses.A_ITALIC)
-
-
-
-
-    # this_index = win[box_index].element_pointer
-    # win[box_index].box.addstr(win[box_index].element_pointer + 3,2,f'{win[box_index].content[  win[box_index].element_pointer  this_index]:^{pane["width"]}}', curses.A_REVERSE | curses.A_ITALIC)
-        # this_y = win[box_index].height
-        # stdscr.addstr(str(this_y))
-        # win[box_index].doginfo()
-        # win[box_index].element_pointer += pointer_indicator % this_y
-        # win[0].bark()
-        # this_y = win[box_index].playtime.height
-    ## ## refresh them all ... now!!! ## ## 
-    ## ## refresh them all ... now!!! ## ## 
-    ## ## refresh them all ... now!!! ##                                    ## 
-    ## ## Refresh them all ... Now!!! ## ## 
+        ## ## Refresh them all ... Now!!! ## ## 
     [win[a].box.refresh() for a in range(n)]
-
-    ## ## ################################### ## ## ##
+        ## ## ################################### ## ## ##
     the_user_presses_the_key_et_voila = stdscr.getkey()
-    ## ## ################################### ## ## ##
+        ## ## ################################### ## ## ##
     match the_user_presses_the_key_et_voila:
         case 'q': 
             continue_machine = False
@@ -143,8 +109,6 @@ while continue_machine:
             pointer_indicator = +1
         case "KEY_UP":
             pointer_indicator = -1
-
-
 ##################################################
 ## ## ################################### ## ## ##
 curses.nocbreak()
@@ -153,5 +117,3 @@ curses.echo()
 curses.endwin()
 ## ## ################################### ## ## ##
 ##################################################
-
-# dictionary_of_windows = {} ## ## ########### ## ## ##
