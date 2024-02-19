@@ -84,7 +84,7 @@ while continue_machine:
         win[a].box.addstr(2,0,f'├{"─":─^{pane["width"]+2}}┤')
         for line, element in enumerate(win[a].content[:pane['height']]):
             win[a].box.addstr(line + 3, border, element[:pane['width']])
-        ## Highlight the column pointer when not selected as DIM
+        ## Highlight the column pointer when not selected and use DIM attribute
         this_y = win[a].element_pointer
         win[a].box.addstr(win[a].element_pointer + 3,2,f'{win[a].content[this_y]:^{pane["width"]}}', curses.A_REVERSE | curses.A_DIM)
         ## Highlight the focus, i.e., focus[0], the heading or title
