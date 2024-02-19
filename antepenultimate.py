@@ -36,7 +36,6 @@ class Window:
         h,w = self.box.getmaxyx()
         self.height = h - border_and_stuff
         self.width  = w - border
-        # self.height = 5
     def bark(self):
         bow_wow = "bark bark! "
         stdscr.addstr(bow_wow)
@@ -47,17 +46,18 @@ class Window:
 ##################################################
 # number_of_boxes = n
 n = 5
-pane = { 'height': curses.LINES * n  // (n + 1) - border_and_stuff , 'width' : curses.COLS  // (n + 1) - border_and_stuff  }
-nlines       = curses.LINES    * n  // (n + 1)
-ncols        = curses.COLS         // (n + 1)
-begin_y      = curses.LINES       // (n + 1) // (n + 1) ## ## or // (n + 1) // ((n + 1) ** 2)
-begin_x      = curses.COLS       // (n + 1)
-space = curses.COLS             // ((n + 1) ** 2)
-#begin_y      = curses.LINES   // (n + 1) // 2 # Can't decide if it's better or worse, keep this line around
+pane = { 'height': curses.LINES * n  // (n + 1) - border_and_stuff ,
+            'width' : curses.COLS   // (n + 1)   - border_and_stuff  }
+nlines       = curses.LINES    * n // (n + 1)
+ncols        = curses.COLS        // (n + 1)
+begin_y      = curses.LINES      // (n + 1) // (n + 1) ## ## or // ((n + 1) ** 2)
+begin_x      = curses.COLS      // (n + 1)
+space = curses.COLS            // ((n + 1) ** 2)
+#begin_y     = curses.LINES   // (n + 1) // 2 # Can't decide if it's better or worse, keep this line around
 increment = space ## ## We increment the increment, but keep space safe
 
 dictionary_of_content  = {} ## ## ########### ## ## ##
-box                    = []
+# box                    = []
 win                    = []
 focus                  = []
 pointer_indicator      = 0
@@ -65,9 +65,9 @@ pointer_indicator      = 0
 ## ## Create n windows
 ## ## ################################### ## ## ##
 for a in range(n):
-    win.append(Window(f'box{a}', curses.newwin( nlines, ncols, begin_y + 1, increment + 1), 0, 0))
+    win.append(Window(f'box{a}', curses.newwin(nlines, ncols, begin_y + 1, increment + 1), 0, 0))
     increment += space + ncols
-    focus.append(win[a].name)
+    focus.append(win[a].name)  ## ## create the list of names to focus on 
 ## ## ################################### ## ## ##
 ## ## Now we are ready to enter the meat grinder
 ## ## ################################### ## ## ##
@@ -75,10 +75,10 @@ while continue_machine:
     ## ## ################################### ## ## ##
     ## ## Print out those boxes to the screen
     ## ## ################################### ## ## ##
-    if pointer_indicator:
+    if pointer_indicator:   ## If the user presses up or down, synchronize with the element pointer
         win[box_index].element_pointer = (win[box_index].element_pointer + pointer_indicator) % win[box_index].height
         pointer_indicator = 0
-    for a in range(n):
+    for a in range(n): ## Display the default state of the screen
         win[a].box.clear()
         win[a].box.box()
         win[a].box.addstr(1,2,f'{win[a].name:^{pane["width"]}}')
@@ -91,7 +91,7 @@ while continue_machine:
         ## Highlight the focus, i.e., focus[0], the heading or title
     box_index = int(focus[0][3:])
     win[box_index].box.addstr(1,2,f'{win[box_index].name:^{pane["width"]}}', curses.A_REVERSE)
-        ## Highlight the focus, i.e., focus[0], the heading or title
+        ## Element which is Highlighted is also italic
     win[box_index].box.addstr(win[box_index].element_pointer + 3,2,f'{win[box_index].content[win[box_index].element_pointer]:^{pane["width"]}}', curses.A_REVERSE | curses.A_ITALIC)
         ## ## Refresh them all ... Now!!! ## ## 
     [win[a].box.refresh() for a in range(n)]
