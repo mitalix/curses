@@ -32,7 +32,7 @@ class Window:
         self.box = box
         self.element_pointer = element_pointer ## ## formerly box1 (or boxn) pointer
         self.buffer_pointer = buffer_pointer ## ## formerly box buffer pointer
-        self.content = [f'{name.title()}-{chr(65 + a)}-Element-{b}' for b in range(20)] 
+        self.content = [f'{name.title()}-{chr(65 + a)}-Element-{b}' for b in range(20)]  ## I notice that "a" leaks through, which is interesting
         h,w = self.box.getmaxyx()
         self.height = h - border_and_stuff
         self.width  = w - border
@@ -46,18 +46,17 @@ class Window:
 ##################################################
 # number_of_boxes = n
 n = 5
-pane = { 'height': curses.LINES * n  // (n + 1) - border_and_stuff ,
-            'width' : curses.COLS   // (n + 1)   - border_and_stuff  }
+pane = { 'height': curses.LINES * n  // (n + 1) - border_and_stuff,
+         'width' : curses.COLS      // (n + 1)  - border_and_stuff }
 nlines       = curses.LINES    * n // (n + 1)
 ncols        = curses.COLS        // (n + 1)
 begin_y      = curses.LINES      // (n + 1) // (n + 1) ## ## or // ((n + 1) ** 2)
 begin_x      = curses.COLS      // (n + 1)
 space        = curses.COLS     // ((n + 1) ** 2)
 #begin_y     = curses.LINES   // (n + 1) // 2 # Can't decide if it's better or worse, keep this line around
-increment = space ## ## We increment the increment, but keep space safe
+increment    = space ## ## We increment the increment, but keep space safe
 
 dictionary_of_content  = {} ## ## ########### ## ## ##
-# box                    = []
 win                    = []
 focus                  = []
 pointer_indicator      = 0
@@ -66,7 +65,7 @@ pointer_indicator      = 0
 ## ## ################################### ## ## ##
 for a in range(n):
     win.append(Window(f'box{a}', curses.newwin(nlines, ncols, begin_y + 1, increment + 1), 0, 0))
-    increment += space + ncols
+    increment += ncols + space 
     focus.append(win[a].name)  ## ## create the list of names to focus on 
 ## ## ################################### ## ## ##
 ## ## Now we are ready to enter the meat grinder
