@@ -52,7 +52,7 @@ nlines       = curses.LINES    * n // (n + 1)
 ncols        = curses.COLS        // (n + 1)
 begin_y      = curses.LINES      // (n + 1) // (n + 1) ## ## or // ((n + 1) ** 2)
 begin_x      = curses.COLS      // (n + 1)
-space = curses.COLS            // ((n + 1) ** 2)
+space        = curses.COLS     // ((n + 1) ** 2)
 #begin_y     = curses.LINES   // (n + 1) // 2 # Can't decide if it's better or worse, keep this line around
 increment = space ## ## We increment the increment, but keep space safe
 
