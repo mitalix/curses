@@ -128,10 +128,8 @@ while continue_machine:
         ## Highlight the focus, i.e., focus[0], the heading or title
     win[box_index].box.addstr(1,2,f'{win[box_index].name:^{pane["width"]}}', curses.A_REVERSE)
         ## Element which is Highlighted is also italic
-    win[box_index].box.addstr(win[box_index].element_pointer + 3,border,f'{win[box_index].scoop[win[box_index].element_pointer]:^{pane["width"]}}', curses.A_REVERSE | curses.A_ITALIC)
-        ## ## Refresh them all ... Now!!! ## ## 
-    [win[a].box.refresh() for a in range(n)]
-        ## ## ################################### ## ## ##
+    win[box_index].box.addstr(win[box_index].element_pointer + 3,border,f'{win[box_index].scoop[win[box_index].element_pointer]:^{pane["width"]}}', curses.A_REVERSE | curses.A_ITALIC) ## ## Refresh them all ... Now!!! ## ## 
+    [win[a].box.refresh() for a in range(n)] ## ## ################################### ## ## ##
     the_user_presses_the_key_et_voila = stdscr.getkey()
         ## ## ################################### ## ## ##
     match the_user_presses_the_key_et_voila:
