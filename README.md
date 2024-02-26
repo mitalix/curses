@@ -3,6 +3,8 @@ curses
 =
 Python curses - simple 3 panel display
 
+Most recent version using element_selector.py
+
 > [!WARNING]
 > Under development, unstructured, not even using functions, repeating a lot of useless code
 
