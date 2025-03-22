@@ -8,7 +8,7 @@ Most recent version using element_selector.py
 > [!WARNING]
 > Under development, unstructured, not even using functions, repeating a lot of useless code
 
-Twofold solution to write the python ncurses program and simultaneously utilize gitub for source control
+Twofold solution to utilize the python curses module and simultaneously perform gitub source control
 
 ### Navigate between three seperate windows
 * **TAB** - move horizontally
