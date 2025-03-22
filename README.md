@@ -8,7 +8,7 @@ Most recent version using element_selector.py
 > [!WARNING]
 > Under development, unstructured, not even using functions, repeating a lot of useless code
 
-Twofold solution to write the program and simultaneously utilize gitub for source control
+Twofold solution to write the python ncurses program and simultaneously utilize gitub for source control
 
 ### Navigate between three seperate windows
 * **TAB** - move horizontally
@@ -23,7 +23,7 @@ Twofold solution to write the program and simultaneously utilize gitub for sourc
 * Prepare environment for metal server to PXE boot
 
 #### box2 - Monitor and poll dnsmasq service
-#### box3 - Launch continuous scrolling "journalctl -fex" using subprocess
+#### box3 - Launch continuous scrolling "journalctl -fex" using python subprocess
 * Capability to scroll up into history
 * Hot key to scroll to bottom
 
